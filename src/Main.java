@@ -30,6 +30,7 @@ public class Main implements GLEventListener, KeyListener {
 			objetos[i].atribuirGL(gl);
 		}
 //		objeto.atribuirGL(gl);
+		//wesley gayzao
 	}
 
 	// metodo definido na interface GLEventListener.
