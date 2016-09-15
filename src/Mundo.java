@@ -13,7 +13,7 @@ public class Mundo {
 	protected Mundo() {
 	}
 
-	public Mundo getInstace() {
+	public static Mundo getInstace() {
 		if (uniqueInstance == null) {
 			return new Mundo();
 		}

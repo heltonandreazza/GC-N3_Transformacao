@@ -1,7 +1,9 @@
 import java.awt.BorderLayout;
 
+import javax.media.opengl.GL;
 import javax.media.opengl.GLCanvas;
 import javax.media.opengl.GLCapabilities;
+import javax.media.opengl.glu.GLU;
 import javax.swing.JFrame;
 import javax.swing.WindowConstants;
 
@@ -40,6 +42,15 @@ public class Frame extends JFrame{
 	
 	public static void main(String[] args) {
 		new Frame().setVisible(true);
+		
+		Mundo mundo = Mundo.getInstace();
+		
+		GL gl = mundo.getGl();
+		
+		Camera camera = Camera.getInstance();
+		
+		GLU glu = camera.getGlu();
+		
 	}
 
 	
